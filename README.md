@@ -1,2 +1,2 @@
 # Personal Web Portfolio
-Link ------> < pazj.github.io >
+Link ------> pazj.github.io
