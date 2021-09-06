@@ -317,6 +317,11 @@ header {
 .service {
   max-width: 800px;
   margin: 0 auto;
+  padding: 10px;
+}
+
+.service p {
+  padding: 15px;
 }
 @media (min-width: 800px) {
   .Services {
