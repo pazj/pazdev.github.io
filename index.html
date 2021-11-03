@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible"="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PazJ &mdash; Portfolio</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Paz Jimenez Portfolio" />
+    <meta
+      name="Keywords"
+      content="Paz Jimenez, Portfolio, Front-End Developer, Developer, Software Engineer, Paraguay, Asuncion"
+    />
+    <meta property="og:title" content="Paz Jimenez Portfolio" />
+    <meta
+      property="og:description"
+      content="Creative designer and developer based in Paraguay"
+    />
+   
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/e2b76d83de.js"
+      crossorigin="anonymous"
+    ></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+  </head>
+  <body>
+    <!-- PRELOADER -->
+    <div class="preloader">
+      <svg xmlns="http://www.w3.org/2000/svg" id="logo" width="302" height="85.573" viewBox="0 0 302 85.573">
+        <defs>
+          <style>
+            .cls-1,
+            .cls-2 {
+              stroke: #7df9ff;
+              stroke-width: 2px;
+            }
+      
+            .cls-2 {
+              stroke-miterlimit: 10;
+            }
+          </style>
+        </defs>
+        <g transform="translate(1 1.014)">
+        <path class="cls-1"
+          d="M41.38,84.74l-9.75.12a.33.33,0,0,1-.36-.3.06.06,0,0,1,0-.06l-1-82.71c0-.25,0-.39.36-.39l9.75-.12a.36.36,0,0,1,.39.33v.06l.1,8.33A31.76,31.76,0,0,1,61.81,1L64.6,1q12-.15,23.15,10.83A33.32,33.32,0,0,1,96,32.73v.94A32,32,0,0,1,82.64,60a31.53,31.53,0,0,1-18.18,6.3l-1.11,0a32.91,32.91,0,0,1-21.82-8.38l.32,26.46a.37.37,0,0,1-.34.39Zm44-50.83V32.8c-.1-7.72-3.92-13.84-11.48-18.64a20.35,20.35,0,0,0-9.81-2.66l-1.83,0A21.74,21.74,0,0,0,41.31,33l0,1.72Q41.48,47,54.48,54a25.06,25.06,0,0,0,8.85,1.73h.56A22,22,0,0,0,85.38,33.94Z"/>
+        <path class="cls-1"
+          d="M200.54,71q19.41-.6,22.64-20L224,37.29V1.49c0-.5.11-.5.38-.5h10.46c.39,0,.39.18.39.5v27c0,5.58.21,10.69.21,15.35-.23,3.13.23,6.3-.21,9.41-4.13,29.2-24.53,30.94-39.23,31.06h-2.17V69.74A19.93,19.93,0,0,0,200.54,71Z" />
+        <path class="cls-1"
+          d="M119.38,19.23h1.08a32.88,32.88,0,0,1,21.75,8.64V19.54a.33.33,0,0,1,.31-.36h9.83c.25,0,.36,0,.36.36V84.06c0,.25,0,.39-.36.39h-9.78c-.25,0-.36-.14-.36-.39V75.73a31.69,31.69,0,0,1-21,8.66h-2.77q-12,0-23-11.11A33.34,33.34,0,0,1,87.49,52.4v-.95a32,32,0,0,1,13.64-26.14A31.61,31.61,0,0,1,119.38,19.23ZM98,51.28V52.4c0,7.72,3.75,13.88,11.25,18.77A20.32,20.32,0,0,0,119,74h1.83A21.75,21.75,0,0,0,142,52.7V51c0-8.17-4.28-14.67-12.89-19.44a24.82,24.82,0,0,0-8.84-1.84h-.55A22,22,0,0,0,98,51.26Z" />
+        <path class="cls-1"
+          d="M196.68,79.76a10.34,10.34,0,0,1-.21,2.24,7.71,7.71,0,0,1-.48,1.51,1.68,1.68,0,0,1-.76.83,2.29,2.29,0,0,1-1,.24H156a3.16,3.16,0,0,1-2.38-1,4.61,4.61,0,0,1-.93-3.24V78a9,9,0,0,1,.14-1.72,9.41,9.41,0,0,1,.41-1.51,10.54,10.54,0,0,1,.76-1.62c.32-.58.71-1.23,1.17-2l27.36-42.59H156a2,2,0,0,1-1.76-1.14,7.67,7.67,0,0,1-.65-3.68,15.33,15.33,0,0,1,.13-2.17,4.9,4.9,0,0,1,.45-1.52,2,2,0,0,1,.76-.83A2.23,2.23,0,0,1,156,19h35.56a4,4,0,0,1,1.34.21,2.32,2.32,0,0,1,1,.69,3.55,3.55,0,0,1,.66,1.24,6.54,6.54,0,0,1,.24,1.93v2.2a11.24,11.24,0,0,1-.14,1.8,10.12,10.12,0,0,1-.41,1.62,12.64,12.64,0,0,1-.76,1.68c-.32.6-.72,1.27-1.17,2L165.11,75H194.2a2.11,2.11,0,0,1,1,.24,2,2,0,0,1,.75.8,5.36,5.36,0,0,1,.52,1.48A10.34,10.34,0,0,1,196.68,79.76Z"/>
+        <path class="cls-2"
+          d="M225,79.49A5.2,5.2,0,0,1,230.28,74c3.08,0,5.2,2.29,5.2,5.54s-2,5.55-5.28,5.55C227.11,85,225,82.66,225,79.49Z"/>
+        </g>
+        </svg>
+    </div>
+
+    <div class="cursor" style="top: 49px; left: 852px; z-index: 2"></div>
+    
+    <!-- navigation bar -->
+    <div class="nav-container">
+      <div class="nav-icon">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+      <nav class="nav-main">
+        <div class="box-wrapper">
+          <div class="box" style="
+              transform-origin: 114.25px 0px;
+              transform: translate(0px, 0px);
+              height: 0px;
+            "></div>
+          <div class="box" style="
+              transform-origin: 114.25px 0px;
+              transform: translate(0px, 0px);
+              height: 0px;
+            "></div>
+          <div class="box" style="
+              transform-origin: 114.25px 0px;
+              transform: translate(0px, 0px);
+              height: 0px;
+            "></div>
+          <div class="box" style="
+              transform-origin: 114.25px 0px;
+              transform: translate(0px, 0px);
+              height: 0px;
+            "></div>
+        </div>
+        <!-- MOBILE LOGO -->
+        <img
+          class="mobile-logo"
+          src="paz-oficial-logo-black.png"
+          alt="paz logo mobile"
+          style="opacity: 0"
+        />
+        <div class="nav-main__content" style="
+            transform-origin: 434.148px 148.5px;
+            transform: translate(0px, 0px);
+            visibility: hidden;
+            opacity: 0;
+          ">
+          <div class="nav-main__content--box">
+            <h4 class="heading-4 ">on the web</h4>
+            <div class="social-links">
+              <div class="social-links--box">
+                <a href="https://github.com/pazj" target="_blank"
+                  ><img src="assets/github.a1bad59c.svg" alt="github"
+                /></a>
+                <a
+                  href="https://www.linkedin.com/in/paz-jimenez-8689571b0/"
+                  target="_blank"
+                  ><img src="assets/linkedin.5f3fc4ea.svg" alt="linkedin"
+                /></a>
+                <a
+                  href="https://www.instagram.com/paztiii/"
+                  target="_blank"
+                  ><img src="assets/instagram.438bb1a6.svg" alt="instagram"
+                /></a>
+              </div>
+            </div>
+            <a
+              class="resume"
+              href="assets/CV-2.0-english.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Resume 📗</a
+            >
+          </div>
+          <div class="nav-main__content--box">
+            <h4 class="heading-44">Navigation</h4>
+            <ul class="list">
+              <li class="list__item">
+                <a href="#home" class="list__link">Home</a>
+              </li>
+              <li class="list__item">
+                <a href="#about" class="list__link">About Me</a>
+              </li>
+              <li class="list__item">
+                <a href="#services" class="list__link">Services</a>
+              </li>
+              <li class="list__item">
+                <a href="#projects" class="list__link">Projects</a>
+              </li>
+              <li class="list__item">
+                <a href="#contact" class="list__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <nav class="nav-sub">
+      <picture>
+        <source media="(max-width:37.5em)" srcset="paz-oficial-logo.png">
+        <img src="paz-oficial-logo.png" alt="paz logo">
+      </picture>
+    </nav>
+    </div>
+  
+
+    <!-- HOME SECTION -->
+    <div
+      class="smooth-scroll-wrapper"
+    >
+      <section class="content">
+          <header id="home" class="header">
+            <div class="hero">
+            <h5 class="heading-5 sec-color">Hi there 👋, I'm</h1>
+            <div class="text-container">
+              <video autoplay playsinline muted loop preload>
+                <source
+                  src="https://d33wubrfki0l68.cloudfront.net/ab4c4ea31f1543825102ebf15a35080cdc1397ce/b8c4f/static/images/frontpage/hero/gradient.mp4"
+                />
+              </video>
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 89.96">
+                <defs>
+                  <style>
+                    .cls-11 {
+                      fill: #1d1d1d;
+                    }
+                  </style>
+                </defs>
+                <title>final-header-logo2</title>
+                <path class="cls-11"
+                  d="M90,61.2c0,3.08,2,4.57,4.71,4.57a6.49,6.49,0,0,0,6.14-4.38,7.57,7.57,0,0,0,.22-2V55.18C94.8,55.15,90,56.66,90,61.2Z"
+                  transform="translate(1.9 -0.02)" />
+                <path class="cls-11"
+                  d="M53.9,39.58a35.4,35.4,0,0,0-4.86.27v10.8a27,27,0,0,0,4,.21c6.31,0,10.21-2.22,10.21-5.92C63.2,41.58,59.89,39.58,53.9,39.58Z"
+                  transform="translate(1.9 -0.02)" />
+                <path class="cls-11"
+                  d="M-1.9,0V90h260V0ZM70.17,52.79C66.11,55.68,60.06,57,53.1,57A35.13,35.13,0,0,1,49,56.81V71.08H37.26V31.77a127.69,127.69,0,0,1,16.05-.84c7.29,0,12.57,1.07,16.09,3.22A10.69,10.69,0,0,1,75,43.36,11.14,11.14,0,0,1,70.17,52.79Zm31.69,18.43L101.22,68H101c-2.26,2.55-5.8,3.91-9.9,3.91-7.06,0-11.21-4.69-11.21-9.81,0-8.36,8.08-12.32,20.35-12.3v-.41c0-1.71-1-4.14-6.35-4.13a21.17,21.17,0,0,0-9.55,2.39l-2-6.38a29.88,29.88,0,0,1,13.48-2.87c11.54,0,15.19,6.31,15.19,13.84V63.45a43.62,43.62,0,0,0,.55,7.77Zm48.64-.14h-30V65.25l10.9-12.85c2-2.17,3.51-3.81,5.47-5.77v-.15H121.67v-8H150v6.11L139.53,56.9c-1.88,2.11-3.67,4.16-5.64,6V63H150.5Zm43.17-14.63c0,11.45-5.51,15.49-14.37,15.49a22.73,22.73,0,0,1-6.67-1l1-7.34a16,16,0,0,0,4.65.7c3.83,0,6.24-1.71,6.24-8V30.93h9.13Zm18.25,15.49a6.8,6.8,0,0,1-7-7.19,6.84,6.84,0,0,1,7-7.23c4.12,0,6.94,2.92,7,7.23S216.13,71.94,211.92,71.94Z"
+                  transform="translate(1.9 -0.02)" />
+              </svg>
+              <span>Paz J.</span>
+            </div>
+            <h3 class="heading-3 sec-color mt-s mbs">
+              Creative <span class="letter-color">Designer </span>&<span
+                class="letter-color"
+              >
+                Developer.</span
+              >
+            </h2>
+            <h4 class="heading-4 sec-color mt-s mb-s">Specialized in UX/UI design & Web Development.</h4>
+            <h4 class="heading-4 sec-color mt-s mb-s">Based in Paraguay. <img src="paraguay (1).png" alt="paraguay flag" width="20"></h4>
+        </div>
+      </header>
+     
+      <main>
+                 <!-- ABOUT ME SECTION -->
+                 <section id="about" class="about-container">
+                  <div class="about-wrapper">
+                 <div class="about-intro">
+                   <h1>Me, Myself & I</h1>
+                   <p>
+                     I <span class="about-item">design</span> and
+                     <span class="about-item">code</span> dynamic and beautifully
+                     simple things for the 
+                     web. I love what i do and i take pride on it!
+                   </p>
+                   <a
+               class="resume"
+               href="assets/CV-2.0-english.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               ><button class="btn" type="button">Donwload CV</button></a>
+             </div>
+           </div>
+             </section>      
+
+         <!-- SERVICES -->
+         <section id="services" class="cards-container">
+          <h5 class="heading-5 sec-color mb-s">Services -</h5>
+          <h2 class="heading-2">What i can do for you! 😁</h2>
+        <div class="wrapper">
+          <div class="box">
+            <div class="front-face">
+              <div class="icon">
+                <img class="icon" src="assets/card-icons/designer1.svg" width="50" />
+              </div>
+              <span>Designer</span>
+            </div>
+            <div class="back-face">
+              <span>Designer</span>
+              <p> I value simple content
+                structure, clean design patterns, and thoughtful
+                interactions.</p>
+                <h1 id="color-text">Things I enjoy designing:</h1>
+                <p>UX/UI, Web, Apps & Logos.</p>
+                <h1 id="color-text">Design Tools:</h1>
+                <p>Figma, Adobe Illustrator & Lightroom.</p>
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="front-face">
+              <div class="icon">
+                <img class="icon" src="assets/card-icons/frontend1.svg" width="50" />
+              </div>
+              <span>Front-end</span>
+            </div>
+            <div class="back-face">
+              <span>Front-end</span>
+              <p>I like to code things from
+                scratch, and enjoy bringing ideas to life in the
+                browser.</p>
+                <h1 id="color-text">Languages i speak:</h1>
+                <p>HTML, CSS, Javascript, Python & React.js.</p>
+                <h1 id="color-text">Dev Tools:</h1>
+                 <p>Github, Gitlab, Bootstrap, Redux, Terminal & VS Code.</p> 
+                
+            </div>
+          </div>
+
+          <div class="box">
+            <div class="front-face">
+              <div class="icon">
+                <img class="icon" src="assets/card-icons/desarrollo-web1.svg" width="50" />
+              </div>
+              <span>Back-end</span>
+            </div>
+            <div class="back-face">
+              <span>Back-end</span>
+              <p>  I enjoy connecting users with
+                the server by managing the interchange of data
+                between them.</p>
+                <h1 id="color-text">Frameworks i like:</h1>
+              <p>Node.js, Express.</p>
+              <h1 id="color-text">Databases:</h1>
+              <p>Google Cloud Firestore & PostgreSQL.</p> 
+            </div>
+          </div>
+        </div>
+        </section>
+
+      <!-- MY PORTFOLIO SECTION -->
+        <section id="projects" class="project">
+          <h5 class="heading-5 sec-color mb-s">featured projects -</h5>
+          <h2 class="heading-2">Stuff I’ve worked on 📁</h2>
+          <div class="project-box__wrapper">
+            <div class="project-box">
+              <div class="project-box__link">
+                <a
+                  href="https://github.com/pazj/amazon-clone"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.a1bad59c.svg" alt="github logo" />
+                </a>
+                <a
+                  href="https://challenge-2ef9a.web.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/link.66854e8a.svg" alt="link icon" />
+                </a>
+              </div>
+              <div class="project-box__content">
+                <h3 class="heading-3 mb-1">Amazon<br />Clone</h3>
+                <h5 class="heading-5"> React.js &nbsp; CSS &nbsp;Firebase</h5>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__link">
+                <a
+                  href="https://github.com/pazj/sunnyside-landing-page"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.a1bad59c.svg" alt="github logo" />
+                </a>
+                <a
+                  href="https://pazj.github.io/sunnyside-landing-page/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/link.66854e8a.svg" alt="link icon" />
+                </a>
+              </div>
+              <div class="project-box__content">
+                <h3 class="heading-3 mb-1">Sunnyside<br>Landing page</h3>
+                <h5 class="heading-5"> HTML/CSS &nbsp; JS</h5>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__link">
+                <a
+                  href="github.com/pazj/whastapp-v2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.a1bad59c.svg" alt="github logo" />
+                </a>
+                <a
+                  href="https://whastapp-v2.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/link.66854e8a.svg" alt="link icon" />
+                </a>
+              </div>
+              <div class="project-box__content">
+                <h3 class="heading-3 mb-1">Whatsapp<br />Clone</h3>
+                <h5 class="heading-5">React.js &nbsp; Next.js &nbsp; firebase</h5>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__link">
+                <a
+                  href="https://github.com/pazj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.a1bad59c.svg" alt="github logo" />
+                </a>
+                <a
+                  href="https://github.com/pazj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/link.66854e8a.svg" alt="link icon" />
+                </a>
+              </div>
+              <div class="project-box__content">
+                <h3 class="heading-3 mb-1">In<br />Progress</h3>
+                <h5 class="heading-5">API &nbsp; HTML/CSS &nbsp; JS</h5>
+              </div>
+            </div>
+            <div class="project-box">
+              <div class="project-box__link">
+                <a
+                  href="https://github.com/pazj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/github.a1bad59c.svg" alt="github logo" />
+                </a>
+                <a
+                  href="https://github.com/pazj"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src="assets/link.66854e8a.svg" alt="link icon" />
+                </a>
+              </div>
+              <div class="project-box__content">
+                <h3 class="heading-3 mb-1">In<br />Progress</h3>
+                <h5 class="heading-5">API &nbsp; HTML/CSS &nbsp; JS</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact">
+          <h5 class="heading-5 sec-color mb-s">Contact -</h5>
+          <h2 class="heading-2">Let's get in touch! 😁</h2>
+          <div class="contact-box__wrapper">
+            <div class="contact-box">
+                <h5 class="heading-5 sec-color mb-s">Email me!📧</h5>
+                <a href="mailto:pazjimenez96@gmail.com" target="_blank" rel="nofollow noopener noreferrer">
+                  pazjimenez96@gmail.com
+                </a>
+            </div>
+            <div class="contact-box">
+              <h5 class="heading-5 sec-color mb-s">Give me a call📞</h5>
+              <a href="tel:+59581902975">+(595) 981 902 975</a>
+            </div>
+            <div class="social-links">
+              <h5 class="heading-5 sec-color mb-s">Or find me on the web🌐</h5>
+             <a href="https://www.facebook.com/paz.jimenez.39/" target="_blank"> 
+              <img src="assets/facebook-red.svg" width="35"></a>
+              <a href="https://www.instagram.com/paztiii/" target="_blank"><img src="assets/instagram-red.svg" width="35"></a>
+              <a href="https://github.com/pazj" target="_blank"><img src="assets/github-red.svg" width="35"></a>
+              <a href="https://www.linkedin.com/in/paz-jimenez-8689571b0/" target="_blank"><img src="assets/linkedin-red.svg" width="35"></a>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <h5 class="heading-5 sec-color">Build with lots of love by © 2021 Paz Jimenez</h5>  
+      </footer>
+    </section>
+    </div>
+
+    <script src="index.js"></script>
+    <script>
+      var e = document.body,
+        t = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+        n = t.getBoundingClientRect().height - "100px",
+        a = 0.08,
+        o = 0;
+      function r() {
+        var e =
+          "translateY(-" +
+          (o += (window.pageYOffset - o) * a) +
+          "px) translateZ(0)";
+        (t.style.transform = e), (callScroll = requestAnimationFrame(r));
+      }
+      (e.style.height = Math.floor(n) + "px"), r();
+      var s = document.querySelector("section"),
+        l = window.pageYOffset,
+        i = function e() {
+          var t = window.pageYOffset,
+            n = 0.2 * (t - l);
+          (s.style.transform = "skewY(" + n + "deg)"),
+            (l = t),
+            requestAnimationFrame(e);
+        };
+      i();
+    </script>
+    <!-- <script src="src.ba611162.js"></script> -->
+  </body>
+</html>
