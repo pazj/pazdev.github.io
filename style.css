@@ -764,6 +764,10 @@ li {
   background: linear-gradient(90deg, #b1e5f9, #f4d2fe);
 }
 
+.project .project-box:nth-child(6) {
+  background: linear-gradient(180deg, #f3cbab, #feedca);
+}
+
 .project-box {
   padding: 2rem;
   height: 35rem;
@@ -800,7 +804,8 @@ li {
 .project-box:nth-child(2):after,
 .project-box:nth-child(3):after,
 .project-box:nth-child(4):after,
-.project-box:nth-child(5):after {
+.project-box:nth-child(5):after,
+.project-box:nth-child(6):after {
   content: "";
   position: absolute;
   width: 103%;
@@ -814,7 +819,8 @@ li {
 .project-box:nth-child(2):hover,
 .project-box:nth-child(3):hover,
 .project-box:nth-child(4):hover,
-.project-box:nth-child(5):hover {
+.project-box:nth-child(5):hover,
+.project-box:nth-child(6):hover {
   background: none;
   background-color: #1d1d1d;
 }
@@ -823,7 +829,8 @@ li {
 .project-box:nth-child(2):hover img,
 .project-box:nth-child(3):hover img,
 .project-box:nth-child(4):hover img,
-.project-box:nth-child(5):hover img {
+.project-box:nth-child(5):hover img,
+.project-box:nth-child(6):hover img {
   filter: invert(1);
 }
 
@@ -831,7 +838,8 @@ li {
 .project-box:nth-child(2):hover:after,
 .project-box:nth-child(3):hover:after,
 .project-box:nth-child(4):hover:after,
-.project-box:nth-child(5):hover:after {
+.project-box:nth-child(5):hover:after,
+.project-box:nth-child(6):hover:after {
   outline: 2px solid #fff;
 }
 
