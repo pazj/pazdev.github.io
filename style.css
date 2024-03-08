@@ -606,23 +606,28 @@ li {
 
 @media only screen and (max-width: 480px) {
   .about-container {
-    background-size: 46%;
-    background-position: 0% 20%;
+    background-size: 43%;
+    background-position: -5% 20%;
     overflow: visible;
   }
   
   .about-intro{
     margin-left: 105px;
   }
+
+  .box .front-face span, .box .back-face span{
+    text-align: center;
+    font-size: 15px !important;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .about-intro > h1 {
-    font-size: 4vh;
+    font-size: 25px !important;
   }
 
   .about-intro > p {
-    font-size: 3vh;
+    font-size: 18px !important;
   }
 
   .btn {
@@ -796,9 +801,9 @@ li {
   }
 }
 
-.project-box__content {
+/* .project-box__content {
   align-self: center;
-}
+} */
 
 .project-box:first-child:after,
 .project-box:nth-child(2):after,
